@@ -1,0 +1,21 @@
+{
+  "name": "file-server-demo",
+  "version": "1.0.0",
+  "description": "Demonstrate uploading and downloading files to an Express server",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "file",
+    "stream",
+    "upload",
+    "download",
+    "express"
+  ],
+  "author": "Tony Pujals (http://twitter.com/subfuzion)",
+  "license": "ISC", 
+  "homepage": "https://github.com/tonypujals/file-server-demo",
+  "repository": "https://github.com/tonypujals/file-server-demo.git",
+  "bugs": "https://github.com/tonypujals/file-server-demo/issues"
+}
