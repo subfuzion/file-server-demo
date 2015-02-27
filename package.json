@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/server",
-    "test": "mocha"
+    "debug": "DEBUG=*,-express:* node ./bin/server",
+    "test": "mocha",
+    "nodemon": "DEBUG=*,-express:* nodemon ./bin/server"
   },
   "bin": "./bin/server",
   "keywords": [
@@ -21,7 +23,8 @@
   "repository": "https://github.com/tonypujals/file-server-demo.git",
   "bugs": "https://github.com/tonypujals/file-server-demo/issues",
   "devDependencies": {
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "nodemon": "^1.3.7"
   },
   "dependencies": {
     "debug": "^2.1.1",
