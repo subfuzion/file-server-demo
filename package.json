@@ -14,8 +14,11 @@
     "express"
   ],
   "author": "Tony Pujals (http://twitter.com/subfuzion)",
-  "license": "ISC", 
+  "license": "ISC",
   "homepage": "https://github.com/tonypujals/file-server-demo",
   "repository": "https://github.com/tonypujals/file-server-demo.git",
-  "bugs": "https://github.com/tonypujals/file-server-demo/issues"
+  "bugs": "https://github.com/tonypujals/file-server-demo/issues",
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  }
 }
