@@ -4,8 +4,10 @@
   "description": "Demonstrate uploading and downloading files to an Express server",
   "main": "app.js",
   "scripts": {
+    "start": "node ./bin/server",
     "test": "mocha"
   },
+  "bin": "./bin/server",
   "keywords": [
     "file",
     "stream",
@@ -20,5 +22,10 @@
   "bugs": "https://github.com/tonypujals/file-server-demo/issues",
   "devDependencies": {
     "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "debug": "^2.1.1",
+    "express": "^4.12.0",
+    "morgan": "^1.5.1"
   }
 }
