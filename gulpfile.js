@@ -1,5 +1,7 @@
 var gulp = require('gulp'),
-    nodemon = require('gulp-nodemon');
+    nodemon = require('gulp-nodemon'),
+    jshint = require('gulp-jshint'),
+    stylish = require('jshint-stylish');
 
 
 /**
@@ -23,6 +25,12 @@ gulp.task('run', function() {
 
   // start nodemon
   nodemon(server);
+});
+
+gulp.task('jshint', function() {
+  return gulp.src(['./app.js'])
+    .pipe(jshint('.jshintrc'))
+    .pipe(jshint.reporter());
 });
 
 
