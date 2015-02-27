@@ -10,8 +10,6 @@ module.exports = app;
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-X = 'hello';
-
 app.use(multer({
   dest: './uploads',
   rename: function(fieldName, fileName) {
