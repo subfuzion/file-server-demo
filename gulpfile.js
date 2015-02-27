@@ -14,10 +14,11 @@ gulp.task('default', ['run'],  function() {
  * gulp run - starts up server and restarts on file changes
  */
 gulp.task('run', function() {
-  // tell nodemon what to start and what extensions to watch
+  // tell nodemon what to start, what extensions to watch, and pass env for debug module
   var server = {
     script: './bin/server',
-    ext: 'js json'
+    ext: 'js json',
+    env: { 'DEBUG': '*,-express:*' }
   };
 
   // start nodemon
