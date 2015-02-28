@@ -8,8 +8,15 @@ var express = require('express'),
 module.exports = app;
 
 app.use(morgan('dev'));
+
+/**
+ * use static middleware to serve upload page
+ */
 app.use(express.static(path.join(__dirname, 'public')));
 
+/**
+ * use multer middleware to handle file uploads to the app
+ */
 app.use(multer({
   dest: './files',
   rename: function(fieldName, fileName) {
