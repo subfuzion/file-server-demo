@@ -19,10 +19,7 @@ describe('upload tests', function() {
     request(app)
       .post('/')
       .attach('picture', path.join(sampleFilesDir, 'picture.png'))
-      .end(function(err, res) {
-        if (err) return done(err);
-	done();
-      });
+      .end(done);
   });
 
 });

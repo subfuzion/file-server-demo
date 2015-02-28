@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(multer({
-  dest: './uploads',
+  dest: './files',
   rename: function(fieldName, fileName) {
     return fileName;
   },
